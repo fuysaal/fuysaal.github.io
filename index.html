@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FATIH UYSAL | Security Researcher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; }
+        .accent-color { color: #38bdf8; }
+        .card { background: #1e293b; border: 1px solid #334155; transition: 0.3s; }
+        .card:hover { border-color: #38bdf8; transform: translateY(-5px); }
+    </style>
+</head>
+<body class="font-sans">
 
+    <nav class="p-6 border-b border-slate-800 sticky top-0 bg-slate-900/90 backdrop-blur-md z-50">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tighter italic">FU</a>
+            <div class="space-x-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#hakkimda" class="hover:text-sky-400 transition">Hakkımda</a>
+                <a href="#projeler" class="hover:text-sky-400 transition">Projelerim</a>
+                <a href="#iletisim" class="hover:text-sky-400 transition">İletişim</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-24 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-6xl font-black mb-4 tracking-tight uppercase">FATIH UYSAL</h1>
+            <p class="text-xl accent-color font-mono tracking-wide uppercase">Offensive & Defensive Security Researcher</p>
+            <div class="mt-8 h-1 w-24 bg-sky-500 mx-auto"></div>
+        </div>
+    </header>
+
+    <section id="hakkimda" class="py-20 px-6 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 border-l-4 border-sky-500 pl-4">Hakkımda</h2>
+        <div class="card p-8 rounded-xl leading-relaxed text-slate-300">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <br>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </section>
+
+    <section id="projeler" class="py-20 px-6 max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 border-l-4 border-sky-500 pl-4">Projelerim</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="card p-6 rounded-xl">
+                <div class="flex justify-between mb-4">
+                    <i class="fa-solid fa-code text-sky-400 text-2xl"></i>
+                    <a href="#" class="text-slate-500 hover:text-white"><i class="fa-brands fa-github text-xl"></i></a>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Bug Bounty Methodology</h3>
+                <p class="text-slate-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.</p>
+            </div>
+            <div class="card p-6 rounded-xl">
+                <div class="flex justify-between mb-4">
+                    <i class="fa-solid fa-shield-halved text-sky-400 text-2xl"></i>
+                    <a href="#" class="text-slate-500 hover:text-white"><i class="fa-brands fa-github text-xl"></i></a>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Automated Recon Suite</h3>
+                <p class="text-slate-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="iletisim" class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">İletişim</h2>
+        <p class="mb-8 text-slate-400">Yeni projeler veya iş birlikleri için bana ulaşın.</p>
+        <div class="flex justify-center space-x-6">
+            <a href="mailto:email@adresin.com" class="text-3xl hover:text-sky-400 transition"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#" class="text-3xl hover:text-sky-400 transition"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="text-3xl hover:text-sky-400 transition"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-slate-500 text-xs border-t border-slate-900">
+        &copy; 2026 FATIH UYSAL. All rights reserved.
+    </footer>
+
+</body>
+</html>

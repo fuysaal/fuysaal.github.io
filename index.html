@@ -1,82 +1,148 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FATIH UYSAL | Security Researcher</title>
+    <title>Fatih UYSAL | Security Researcher</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { background-color: #0f172a; color: #f8fafc; }
-        .accent-color { color: #38bdf8; }
-        .card { background: #1e293b; border: 1px solid #334155; transition: 0.3s; }
-        .card:hover { border-color: #38bdf8; transform: translateY(-5px); }
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Inter:wght@400;700;900&display=swap');
+        body { background-color: #0b0f1a; color: #e2e8f0; font-family: 'Inter', sans-serif; }
+        .mono { font-family: 'Fira Code', monospace; }
+        .hero-gradient { background: radial-gradient(circle at 50% 50%, #1e293b 0%, #0b0f1a 100%); }
+        .skill-badge { background: #1e293b; border: 1px solid #334155; transition: 0.3s; }
+        .skill-badge:hover { border-color: #38bdf8; background: #0f172a; }
+        .project-card { background: #111827; border: 1px solid #1f2937; transition: all 0.4s ease; }
+        .project-card:hover { border-color: #38bdf8; transform: translateY(-8px); box-shadow: 0 10px 30px -15px rgba(56, 189, 248, 0.3); }
     </style>
 </head>
-<body class="font-sans">
+<body>
 
-    <nav class="p-6 border-b border-slate-800 sticky top-0 bg-slate-900/90 backdrop-blur-md z-50">
-        <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-tighter italic">FU</a>
-            <div class="space-x-8 text-sm font-medium uppercase tracking-widest">
+    <nav class="fixed w-full z-50 bg-[#0b0f1a]/80 backdrop-blur-lg border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="mono text-sky-400 font-bold tracking-tighter text-xl">fatih@uysal:~$</span>
+            <div class="hidden md:flex space-x-8 text-xs uppercase tracking-widest font-bold">
                 <a href="#hakkimda" class="hover:text-sky-400 transition">Hakkımda</a>
-                <a href="#projeler" class="hover:text-sky-400 transition">Projelerim</a>
+                <a href="#deneyim" class="hover:text-sky-400 transition">Deneyim</a>
+                <a href="#projeler" class="hover:text-sky-400 transition">Projeler</a>
                 <a href="#iletisim" class="hover:text-sky-400 transition">İletişim</a>
             </div>
         </div>
     </nav>
 
-    <header class="py-24 px-6 text-center">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-6xl font-black mb-4 tracking-tight uppercase">FATIH UYSAL</h1>
-            <p class="text-xl accent-color font-mono tracking-wide uppercase">Offensive & Defensive Security Researcher</p>
-            <div class="mt-8 h-1 w-24 bg-sky-500 mx-auto"></div>
+    <header class="min-h-screen flex items-center justify-center hero-gradient pt-20">
+        <div class="text-center px-6">
+            <h1 class="text-6xl md:text-8xl font-black mb-4 tracking-tighter uppercase leading-none">FATIH UYSAL</h1>
+            <p class="text-lg md:text-2xl text-sky-400 mono font-medium">Offensive & Defensive Security Researcher</p>
+            <div class="mt-10 flex justify-center space-x-6 text-2xl text-slate-400">
+                <a href="https://github.com/fuysaal" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/fuysaal" target="_blank" class="hover:text-sky-600 transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://medium.com/@fuysaal" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-medium"></i></a>
+            </div>
+            <div class="mt-12">
+                <a href="#hakkimda" class="border border-sky-500/50 px-8 py-3 rounded-full hover:bg-sky-500/10 transition text-sm font-bold uppercase tracking-widest">Keşfet</a>
+            </div>
         </div>
     </header>
 
-    <section id="hakkimda" class="py-20 px-6 max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold mb-8 border-l-4 border-sky-500 pl-4">Hakkımda</h2>
-        <div class="card p-8 rounded-xl leading-relaxed text-slate-300">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <br>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-    </section>
-
-    <section id="projeler" class="py-20 px-6 max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 border-l-4 border-sky-500 pl-4">Projelerim</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="card p-6 rounded-xl">
-                <div class="flex justify-between mb-4">
-                    <i class="fa-solid fa-code text-sky-400 text-2xl"></i>
-                    <a href="#" class="text-slate-500 hover:text-white"><i class="fa-brands fa-github text-xl"></i></a>
-                </div>
-                <h3 class="text-xl font-bold mb-2">Bug Bounty Methodology</h3>
-                <p class="text-slate-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.</p>
+    <section id="hakkimda" class="py-32 px-6 max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-white border-b-2 border-sky-500 w-fit pb-2">Hakkımda</h2>
+                <p class="text-slate-400 leading-relaxed mb-6">
+                    Siber güvenlik alanında uzmanlaşmayı hedefleyen ve hem **Red Team** hem de **Blue Team** tarafında aktif olarak kendini geliştiren bir güvenlik araştırmacısıyım. 
+                    Şu an <span class="text-white font-semibold">ZeroFense</span> bünyesinde SOC Analisti olarak görev alıyor, aynı zamanda kurucu ortağı olduğum <span class="text-white font-semibold">AltHack</span> topluluğu ile ekosisteme katkı sağlıyorum.
+                </p>
+                <p class="text-slate-400 leading-relaxed">
+                    Yaklaşık iki yıldır penetrasyon testleri, zafiyet analizi ve güvenlik izleme (SIEM/SOAR) konularında gerçek senaryolu projeler yürütüyorum.
+                </p>
             </div>
-            <div class="card p-6 rounded-xl">
-                <div class="flex justify-between mb-4">
-                    <i class="fa-solid fa-shield-halved text-sky-400 text-2xl"></i>
-                    <a href="#" class="text-slate-500 hover:text-white"><i class="fa-brands fa-github text-xl"></i></a>
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-white">Teknik Cephanelik</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="skill-badge px-4 py-2 rounded text-sm mono text-sky-300">Web Penetration Testing</span>
+                    <span class="skill-badge px-4 py-2 rounded text-sm mono text-sky-300">SOC Analysis</span>
+                    <span class="skill-badge px-4 py-2 rounded text-sm mono text-sky-300">Wazuh (SIEM)</span>
+                    <span class="skill-badge px-4 py-2 rounded text-sm mono text-sky-300">Splunk</span>
+                    <span class="skill-badge px-4 py-2 rounded text-sm mono text-sky-300">SOAR & Shuffle</span>
+                    <span class="skill-badge px-4 py-2 rounded text-sm mono text-sky-300">Bug Bounty</span>
+                    <span class="skill-badge px-4 py-2 rounded text-sm mono text-sky-300">DFIR-IRIS</span>
+                    <span class="skill-badge px-4 py-2 rounded text-sm mono text-sky-300">Python & Bash</span>
                 </div>
-                <h3 class="text-xl font-bold mb-2">Automated Recon Suite</h3>
-                <p class="text-slate-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.</p>
             </div>
         </div>
     </section>
 
-    <section id="iletisim" class="py-20 px-6 max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-8">İletişim</h2>
-        <p class="mb-8 text-slate-400">Yeni projeler veya iş birlikleri için bana ulaşın.</p>
-        <div class="flex justify-center space-x-6">
-            <a href="mailto:email@adresin.com" class="text-3xl hover:text-sky-400 transition"><i class="fa-solid fa-envelope"></i></a>
-            <a href="#" class="text-3xl hover:text-sky-400 transition"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#" class="text-3xl hover:text-sky-400 transition"><i class="fa-brands fa-twitter"></i></a>
+    <section id="deneyim" class="bg-slate-900/30 py-32 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center text-white italic">Deneyim & Topluluk</h2>
+            <div class="space-y-12">
+                <div class="relative pl-8 border-l border-sky-500/30">
+                    <div class="absolute w-4 h-4 bg-sky-500 rounded-full -left-[9px] top-1"></div>
+                    <h3 class="text-xl font-bold text-white">SOC Analyst @ ZeroFense</h3>
+                    <p class="text-sky-400 text-sm mono mb-4">Mart 2025 - Devam Ediyor</p>
+                    <p class="text-slate-400">Güvenlik olaylarını inceleme, olay müdahalesi (Incident Response) ve tehdit analizi süreçlerinde aktif rol alıyorum.</p>
+                </div>
+                <div class="relative pl-8 border-l border-sky-500/30">
+                    <div class="absolute w-4 h-4 bg-slate-700 rounded-full -left-[9px] top-1 border border-sky-500"></div>
+                    <h3 class="text-xl font-bold text-white">Associate Founder @ AltHack</h3>
+                    <p class="text-sky-400 text-sm mono mb-4">Eylül 2025 - Devam Ediyor</p>
+                    <p class="text-slate-400">Siber güvenlik topluluğunun yönetimi, içerik üretimi ve araştırmacıların gelişim süreçlerinin koordinasyonu.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-slate-500 text-xs border-t border-slate-900">
-        &copy; 2026 FATIH UYSAL. All rights reserved.
+    <section id="projeler" class="py-32 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-white border-l-4 border-sky-500 pl-4">Öne Çıkan Projeler & Yayınlar</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="project-card p-8 rounded-2xl">
+                <span class="text-xs text-sky-500 mono uppercase">SIEM & SOAR</span>
+                <h3 class="text-xl font-bold mt-2 mb-4">Wazuh + Shuffle + IRIS</h3>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">Güvenlik olaylarını otomatik hale getiren merkezi izleme ve olay yanıt (SOAR) simülasyonu.</p>
+                <div class="flex justify-between items-center">
+                    <a href="https://github.com/fuysaal" class="text-sky-400 hover:text-white transition text-sm font-bold">Detay <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    <i class="fa-solid fa-shield-halved text-slate-700 text-2xl"></i>
+                </div>
+            </div>
+            <div class="project-card p-8 rounded-2xl">
+                <span class="text-xs text-sky-500 mono uppercase">Medium Blog</span>
+                <h3 class="text-xl font-bold mt-2 mb-4">Siber Güvenlik Yazıları</h3>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">Medium üzerinden paylaştığım teknik analizler, bug bounty süreçleri ve güvenlik araçları incelemeleri.</p>
+                <div class="flex justify-between items-center">
+                    <a href="https://medium.com/@fuysaal" class="text-sky-400 hover:text-white transition text-sm font-bold">Yazıları Oku <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    <i class="fa-brands fa-medium text-slate-700 text-2xl"></i>
+                </div>
+            </div>
+            <div class="project-card p-8 rounded-2xl">
+                <span class="text-xs text-sky-500 mono uppercase">Offensive</span>
+                <h3 class="text-xl font-bold mt-2 mb-4">Bug Bounty Methodology</h3>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">Keşif ve zafiyet tespiti süreçlerinde kullandığım otomatize araçlar ve manuel test teknikleri.</p>
+                <div class="flex justify-between items-center">
+                    <a href="https://github.com/fuysaal" class="text-sky-400 hover:text-white transition text-sm font-bold">GitHub <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    <i class="fa-solid fa-bug text-slate-700 text-2xl"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="iletisim" class="py-32 px-6 border-t border-slate-900 bg-[#0b0f1a]">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-black mb-8 italic uppercase tracking-tighter">İletişime Geç</h2>
+            <p class="text-slate-400 mb-12">Güvenlik projeleri, topluluk faaliyetleri veya sadece kahve eşliğinde siber güvenlik sohbeti için ulaşabilirsin.</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="mailto:uysal43fatih@gmail.com" class="bg-sky-500 text-slate-900 px-8 py-3 rounded font-bold hover:bg-sky-400 transition">Email Gönder</a>
+                <div class="flex space-x-4 items-center px-6 border-l border-slate-800">
+                    <a href="https://linkedin.com/in/fuysaal" class="text-2xl hover:text-sky-400 transition"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/fuysaal" class="text-2xl hover:text-sky-400 transition"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-slate-600 text-[10px] uppercase tracking-[0.3em] mono">
+        &copy; 2026 FATIH UYSAL // [SECURED ACCESS]
     </footer>
 
 </body>

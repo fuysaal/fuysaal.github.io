@@ -13,7 +13,7 @@
         .card-bg { background: #111827; border: 1px solid #1f2937; transition: all 0.3s ease; }
         .card-bg:hover { border-color: #38bdf8; transform: translateY(-5px); }
         .section-title { font-size: 2.25rem; font-weight: 800; margin-bottom: 2rem; border-left: 4px solid #38bdf8; padding-left: 1rem; color: white; }
-        .skill-item { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-family: 'Fira Code', monospace; font-size: 0.9rem; }
+        .skill-item { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-family: 'Fira Code', monospace; font-size: 0.85rem; }
         .cta-box { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; }
     </style>
 </head>
@@ -21,7 +21,7 @@
 
     <nav class="fixed w-full z-50 bg-[#0b0f1a]/90 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-xl font-black tracking-tighter text-white uppercase">FU <span class="text-sky-500 text-2xl">.</span> SECURITY</span>
+            <span class="text-xl font-black tracking-tighter text-white uppercase italic">FU <span class="text-sky-500">.</span> SECURITY</span>
             <div class="hidden md:flex space-x-8 text-[10px] uppercase tracking-[0.2em] font-bold">
                 <a href="#hakkimda" class="hover:text-sky-400 transition">Hakkımda</a>
                 <a href="#deneyim" class="hover:text-sky-400 transition">Deneyim</a>
@@ -34,7 +34,11 @@
     <header class="min-h-screen flex items-center justify-center hero-gradient pt-20">
         <div class="text-center px-6">
             <h1 class="text-7xl md:text-9xl font-black mb-4 tracking-tighter uppercase leading-none text-white">FATIH UYSAL</h1>
-            <p class="text-lg md:text-2xl text-sky-500 font-mono tracking-widest uppercase">Offensive & Defensive Security Researcher</p>
+            <p class="text-lg md:text-2xl text-sky-500 font-mono tracking-[0.3em] uppercase mb-10">Offensive & Defensive Security Researcher</p>
+            
+            <a href="#hakkimda" class="inline-block border-2 border-sky-500 text-sky-500 px-10 py-3 rounded-full font-bold uppercase tracking-widest hover:bg-sky-500 hover:text-slate-900 transition-all duration-300">
+                Keşfet <i class="fa-solid fa-chevron-down ml-2 animate-bounce"></i>
+            </a>
         </div>
     </header>
 
@@ -43,22 +47,24 @@
             <div>
                 <h2 class="section-title">FATIH UYSAL Kimdir?</h2>
                 <div class="text-slate-400 leading-relaxed space-y-4">
-                    <p></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Siber güvenlik dünyasında hem "ofansif" hem de "defansif" bakış açısını birleştiren bir güvenlik araştırmacısıyım. Yaklaşık iki yıldır siber tehditlerin tespiti, analizi ve simülasyonu üzerine yoğunlaşıyorum.</p>
+                    <p>Özellikle SOC operasyonları, SIEM/SOAR entegrasyonları ve sızma testleri konularında pratik deneyime sahibim. Topluluk odaklı çalışmayı seven bir araştırmacı olarak AltHack topluluğunun kurucuları arasında yer alıyorum.</p>
                 </div>
             </div>
             <div>
-                <h2 class="section-title text-white italic">Teknik Cephanelik</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-8">
-                    <div class="skill-item"><i class="fa-solid fa-chevron-right text-sky-500 text-xs"></i> <span>Web Penetration Testing</span></div>
-                    <div class="skill-item"><i class="fa-solid fa-chevron-right text-sky-500 text-xs"></i> <span>SOC Analysis & IR</span></div>
-                    <div class="skill-item"><i class="fa-solid fa-chevron-right text-sky-500 text-xs"></i> <span>SIEM (Wazuh & Splunk)</span></div>
-                    <div class="skill-item"><i class="fa-solid fa-chevron-right text-sky-500 text-xs"></i> <span>SOAR (Shuffle)</span></div>
-                    <div class="skill-item"><i class="fa-solid fa-chevron-right text-sky-500 text-xs"></i> <span>Malware Analysis (Basic)</span></div>
-                    <div class="skill-item"><i class="fa-solid fa-chevron-right text-sky-500 text-xs"></i> <span>Python / Bash Scripting</span></div>
-                    <div class="skill-item"><i class="fa-solid fa-chevron-right text-sky-500 text-xs"></i> <span>Cloud Security</span></div>
-                    <div class="skill-item"><i class="fa-solid fa-chevron-right text-sky-500 text-xs"></i> <span>Network Hardening</span></div>
+                <h2 class="section-title italic">Teknik Cephanelik</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8">
+                    <div class="skill-item"><i class="fa-solid fa-code-branch text-sky-500"></i> <span>Web Penetration Testing</span></div>
+                    <div class="skill-item"><i class="fa-solid fa-code-branch text-sky-500"></i> <span>SOC & Threat Hunting</span></div>
+                    <div class="skill-item"><i class="fa-solid fa-code-branch text-sky-500"></i> <span>Wazuh / Splunk (SIEM)</span></div>
+                    <div class="skill-item"><i class="fa-solid fa-code-branch text-sky-500"></i> <span>Shuffle (SOAR)</span></div>
+                    <div class="skill-item"><i class="fa-solid fa-code-branch text-sky-500"></i> <span>Python Security Scripting</span></div>
+                    <div class="skill-item"><i class="fa-solid fa-code-branch text-sky-500"></i> <span>OWASP Top 10 Analysis</span></div>
                 </div>
+                <a href="https://github.com/fuysaal/Certificates" target="_blank" class="inline-flex items-center gap-3 bg-slate-800 border border-slate-700 px-6 py-3 rounded-xl hover:border-sky-500 transition group text-sm font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-certificate text-sky-500 text-xl group-hover:rotate-12 transition"></i>
+                    Sertifikalarımı Görüntüle
+                </a>
             </div>
         </div>
     </section>
@@ -66,52 +72,96 @@
     <section id="deneyim" class="bg-slate-900/20 py-32 px-6">
         <div class="max-w-6xl mx-auto">
             <h2 class="section-title text-white">Deneyim & Kariyer</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="card-bg p-8 rounded-xl"><h3 class="text-xl font-bold text-white italic">Slot 1</h3><p class="text-slate-500 text-sm mt-4">...</p></div>
-                <div class="card-bg p-8 rounded-xl"><h3 class="text-xl font-bold text-white italic">Slot 2</h3><p class="text-slate-500 text-sm mt-4">...</p></div>
-                <div class="card-bg p-8 rounded-xl"><h3 class="text-xl font-bold text-white italic">Slot 3</h3><p class="text-slate-500 text-sm mt-4">...</p></div>
-                <div class="card-bg p-8 rounded-xl"><h3 class="text-xl font-bold text-white italic">Slot 4</h3><p class="text-slate-500 text-sm mt-4">...</p></div>
-                <div class="card-bg p-8 rounded-xl"><h3 class="text-xl font-bold text-white italic">Slot 5</h3><p class="text-slate-500 text-sm mt-4">...</p></div>
-                <div class="card-bg p-8 rounded-xl"><h3 class="text-xl font-bold text-white italic">Slot 6</h3><p class="text-slate-500 text-sm mt-4">...</p></div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+                <div class="card-bg p-8 rounded-xl border-l-4 border-sky-500">
+                    <span class="text-sky-500 font-mono text-xs uppercase tracking-widest leading-loose">Mart 2025 - Günümüz</span>
+                    <h3 class="text-xl font-bold mt-2 text-white uppercase italic">SOC Analyst @ ZeroFense</h3>
+                    <p class="text-slate-500 mt-4 text-sm leading-relaxed">Güvenlik olaylarının (Incident) derinlemesine analizi, tehdit avcılığı ve olay müdahale süreçlerinin yönetimi.</p>
+                </div>
+                <div class="card-bg p-8 rounded-xl">
+                    <span class="text-slate-500 font-mono text-xs uppercase tracking-widest leading-loose">Eylül 2025 - Günümüz</span>
+                    <h3 class="text-xl font-bold mt-2 text-white uppercase italic">Associate Founder @ AltHack</h3>
+                    <p class="text-slate-500 mt-4 text-sm leading-relaxed">Siber güvenlik topluluğu yönetimi, haftalık teknik içerik üretimi ve Red Team/Bug Hunting odaklı araştırmalar.</p>
+                </div>
+                <div class="card-bg p-8 rounded-xl opacity-60">
+                    <span class="text-slate-500 font-mono text-xs uppercase tracking-widest leading-loose">2024 - 2025</span>
+                    <h3 class="text-xl font-bold mt-2 text-white uppercase italic">Bug Bounty Researcher</h3>
+                    <p class="text-slate-500 mt-4 text-sm leading-relaxed">Microsoft, MediaMarkt ve Watsons gibi programlarda aktif zafiyet araştırmaları ve raporlama süreçleri.</p>
+                </div>
+                <div class="card-bg p-8 rounded-xl opacity-60">
+                    <span class="text-slate-500 font-mono text-xs uppercase tracking-widest leading-loose">Gönüllü Deneyim</span>
+                    <h3 class="text-xl font-bold mt-2 text-white uppercase italic">Cyber Security Content Editor</h3>
+                    <p class="text-slate-500 mt-4 text-sm leading-relaxed">Haftalık siber güvenlik haberleri ve teknik blog yazılarının editörlüğü ve yayınlanması.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="projeler" class="py-32 px-6 max-w-7xl mx-auto">
         <h2 class="section-title text-white">Öne Çıkan Projeler</h2>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-20">
-            <div class="card-bg p-6 rounded-lg h-48 border-dashed border-slate-800 flex items-center justify-center text-slate-700 italic">Proje Slotu</div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-20">
+            <div class="card-bg p-6 rounded-lg flex flex-col justify-between h-64 border-t-2 border-sky-500">
+                <div>
+                    <i class="fa-solid fa-shield-halved text-sky-500 mb-4 text-2xl"></i>
+                    <h3 class="font-bold text-white uppercase text-sm tracking-tight">Wazuh + Shuffle + IRIS</h3>
+                    <p class="text-[11px] text-slate-500 mt-2">SIEM ve SOAR entegrasyonu ile otomatik olay müdahale (IR) simülasyonu.</p>
+                </div>
+                <a href="https://github.com/fuysaal" target="_blank" class="text-[10px] uppercase font-bold text-sky-400 hover:text-white transition">Repo İncele →</a>
             </div>
+            <div class="card-bg p-6 rounded-lg flex flex-col justify-between h-64">
+                <div>
+                    <i class="fa-solid fa-terminal text-slate-500 mb-4 text-2xl"></i>
+                    <h3 class="font-bold text-white uppercase text-sm tracking-tight">Python Security Tools</h3>
+                    <p class="text-[11px] text-slate-500 mt-2">Keşif (Recon) süreçlerini hızlandıran ve otomatize eden özel Python scriptleri.</p>
+                </div>
+                <a href="https://github.com/fuysaal" target="_blank" class="text-[10px] uppercase font-bold text-sky-400 hover:text-white transition">Repo İncele →</a>
+            </div>
+            <div class="card-bg p-6 rounded-lg flex flex-col justify-between h-64 border-t-2 border-sky-500">
+                <div>
+                    <i class="fa-solid fa-bug text-sky-500 mb-4 text-2xl"></i>
+                    <h3 class="font-bold text-white uppercase text-sm tracking-tight">Bug Bounty Methodology</h3>
+                    <p class="text-[11px] text-slate-500 mt-2">Geniş kapsamlı varlıklar üzerinde uygulanan Recon-to-Exploit metodolojisi dokümantasyonu.</p>
+                </div>
+                <a href="https://github.com/fuysaal" target="_blank" class="text-[10px] uppercase font-bold text-sky-400 hover:text-white transition">Repo İncele →</a>
+            </div>
+            <div class="card-bg p-6 rounded-lg flex flex-col justify-between h-64">
+                <div>
+                    <i class="fa-solid fa-network-wired text-slate-500 mb-4 text-2xl"></i>
+                    <h3 class="font-bold text-white uppercase text-sm tracking-tight">Active Directory Lab</h3>
+                    <p class="text-[11px] text-slate-500 mt-2">Sızma testleri için tasarlanmış, zafiyetli bileşenler içeren sanal laboratuvar ortamı.</p>
+                </div>
+                <a href="https://github.com/fuysaal" target="_blank" class="text-[10px] uppercase font-bold text-sky-400 hover:text-white transition">Repo İncele →</a>
+            </div>
+        </div>
 
         <div class="grid md:grid-cols-2 gap-8">
             <div class="cta-box p-10 rounded-3xl flex flex-col md:flex-row items-center gap-8 group">
-                <div class="text-5xl text-white group-hover:scale-110 transition"><i class="fa-brands fa-medium"></i></div>
+                <div class="text-5xl text-white group-hover:text-sky-500 transition"><i class="fa-brands fa-medium"></i></div>
                 <div>
-                    <h3 class="text-2xl font-bold text-white mb-2">Siber Güvenlik Yazıları</h3>
-                    <p class="text-slate-400 text-sm mb-4">Teknik analizlerimi, CTF çözümlerimi ve sektördeki güncel zafiyetleri Medium üzerinden detaylandırıyorum.</p>
-                    <a href="https://medium.com/@fuysaal" target="_blank" class="text-sky-400 font-bold hover:underline">Yazıları Görüntüle →</a>
+                    <h3 class="text-2xl font-bold text-white mb-2 italic">Medium Yayınları</h3>
+                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">Teknik analizler, vaka incelemeleri ve siber güvenlik dünyasından notlar.</p>
+                    <a href="https://medium.com/@fuysaal" target="_blank" class="text-sky-400 font-bold hover:underline">Yazılara Git →</a>
                 </div>
             </div>
             <div class="cta-box p-10 rounded-3xl flex flex-col md:flex-row items-center gap-8 group">
-                <div class="text-5xl text-white group-hover:scale-110 transition"><i class="fa-brands fa-github"></i></a></div>
+                <div class="text-5xl text-white group-hover:text-sky-500 transition"><i class="fa-brands fa-github"></i></div>
                 <div>
-                    <h3 class="text-2xl font-bold text-white mb-2">Geliştirilen Araçlar</h3>
-                    <p class="text-slate-400 text-sm mb-4">Otomatize keşif araçları, güvenlik scriptleri ve açık kaynak projelerimi GitHub üzerinde paylaşıyorum.</p>
-                    <a href="https://github.com/fuysaal" target="_blank" class="text-sky-400 font-bold hover:underline">Repoları İncele →</a>
+                    <h3 class="text-2xl font-bold text-white mb-2 italic">GitHub Repoları</h3>
+                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">Açık kaynak kodlu araçlar, metodolojiler ve güvenlik konfigürasyonları.</p>
+                    <a href="https://github.com/fuysaal" target="_blank" class="text-sky-400 font-bold hover:underline">Kodları Gör →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-20 border-t border-slate-900 bg-[#0b0f1a] text-center">
+    <footer class="py-20 border-t border-slate-900 text-center">
         <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-4xl font-black mb-8 italic uppercase text-white tracking-tighter">İLETİŞİM</h2>
-            <div class="flex justify-center space-x-12 mb-12">
-                <a href="mailto:uysal43fatih@gmail.com" class="text-slate-400 hover:text-sky-500 text-2xl transition"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://linkedin.com/in/fuysaal" target="_blank" class="text-slate-400 hover:text-sky-600 text-2xl transition"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/fuysaal" target="_blank" class="text-slate-400 hover:text-white text-2xl transition"><i class="fa-brands fa-github"></i></a>
+            <div class="flex justify-center space-x-12 mb-10">
+                <a href="mailto:uysal43fatih@gmail.com" class="text-slate-500 hover:text-sky-500 text-xl transition"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/fuysaal" target="_blank" class="text-slate-500 hover:text-sky-600 text-xl transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/fuysaal" target="_blank" class="text-slate-500 hover:text-white text-xl transition"><i class="fa-brands fa-github"></i></a>
             </div>
-            <p class="text-slate-700 text-[10px] uppercase tracking-[0.5em] mono">FATIH UYSAL // 2026 // [SYSTEM SECURED]</p>
+            <p class="text-slate-800 text-[10px] uppercase tracking-[0.5em] font-mono">FATIH UYSAL &copy; 2026 // [OFFENSIVE & DEFENSIVE EXPERTISE]</p>
         </div>
     </footer>
 

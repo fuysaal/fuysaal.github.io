@@ -13,13 +13,15 @@
         .card-bg { background: #111827; border: 1px solid #1f2937; transition: all 0.3s ease; }
         .card-bg:hover { border-color: #38bdf8; transform: translateY(-5px); }
         .section-title { font-size: 2.25rem; font-weight: 800; margin-bottom: 2rem; border-left: 4px solid #38bdf8; padding-left: 1rem; color: white; }
+        .skill-item { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-family: 'Fira Code', monospace; font-size: 0.9rem; }
+        .cta-box { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; }
     </style>
 </head>
 <body>
 
     <nav class="fixed w-full z-50 bg-[#0b0f1a]/90 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-xl font-black tracking-tighter text-white uppercase">FU <span class="text-sky-500">|</span> SECURITY</span>
+            <span class="text-xl font-black tracking-tighter text-white uppercase">FU <span class="text-sky-500 text-2xl">.</span> SECURITY</span>
             <div class="hidden md:flex space-x-8 text-[10px] uppercase tracking-[0.2em] font-bold">
                 <a href="#hakkimda" class="hover:text-sky-400 transition">Hakkımda</a>
                 <a href="#deneyim" class="hover:text-sky-400 transition">Deneyim</a>
@@ -29,32 +31,33 @@
         </div>
     </nav>
 
-    <header class="min-h-screen flex items-center justify-center hero-gradient">
+    <header class="min-h-screen flex items-center justify-center hero-gradient pt-20">
         <div class="text-center px-6">
             <h1 class="text-7xl md:text-9xl font-black mb-4 tracking-tighter uppercase leading-none text-white">FATIH UYSAL</h1>
             <p class="text-lg md:text-2xl text-sky-500 font-mono tracking-widest uppercase">Offensive & Defensive Security Researcher</p>
-            <div class="mt-12 flex justify-center space-x-8 text-2xl text-slate-500">
-                <a href="https://github.com/fuysaal" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
-                <a href="https://linkedin.com/in/fuysaal" target="_blank" class="hover:text-sky-600 transition"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://medium.com/@fuysaal" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-medium"></i></a>
-            </div>
         </div>
     </header>
 
     <section id="hakkimda" class="py-32 px-6 max-w-6xl mx-auto">
         <div class="grid md:grid-cols-2 gap-16">
             <div>
-                <h2 class="section-title text-white">FATIH UYSAL Kimdir?</h2>
+                <h2 class="section-title">FATIH UYSAL Kimdir?</h2>
                 <div class="text-slate-400 leading-relaxed space-y-4">
                     <p></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
             <div>
-                <h2 class="section-title text-white">Teknik Alanları Nelerdir?</h2>
-                <div class="text-slate-400 leading-relaxed space-y-4">
-                    <p></p>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                <h2 class="section-title text-white italic">Teknik Cephanelik</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-8">
+                    <div class="skill-item"><i class="fa-solid fa-chevron-right text-sky-500 text-xs"></i> <span>Web Penetration Testing</span></div>
+                    <div class="skill-item"><i class="fa-solid fa-chevron-right text-sky-500 text-xs"></i> <span>SOC Analysis & IR</span></div>
+                    <div class="skill-item"><i class="fa-solid fa-chevron-right text-sky-500 text-xs"></i> <span>SIEM (Wazuh & Splunk)</span></div>
+                    <div class="skill-item"><i class="fa-solid fa-chevron-right text-sky-500 text-xs"></i> <span>SOAR (Shuffle)</span></div>
+                    <div class="skill-item"><i class="fa-solid fa-chevron-right text-sky-500 text-xs"></i> <span>Malware Analysis (Basic)</span></div>
+                    <div class="skill-item"><i class="fa-solid fa-chevron-right text-sky-500 text-xs"></i> <span>Python / Bash Scripting</span></div>
+                    <div class="skill-item"><i class="fa-solid fa-chevron-right text-sky-500 text-xs"></i> <span>Cloud Security</span></div>
+                    <div class="skill-item"><i class="fa-solid fa-chevron-right text-sky-500 text-xs"></i> <span>Network Hardening</span></div>
                 </div>
             </div>
         </div>
@@ -64,77 +67,52 @@
         <div class="max-w-6xl mx-auto">
             <h2 class="section-title text-white">Deneyim & Kariyer</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="card-bg p-8 rounded-xl">
-                    <span class="text-sky-500 font-mono text-sm">2025 - Günümüz</span>
-                    <h3 class="text-xl font-bold mt-2 text-white italic">SOC Analyst @ ZeroFense</h3>
-                    <p class="text-slate-500 mt-4 text-sm">Deneyim açıklaması buraya gelecek...</p>
-                </div>
-                <div class="card-bg p-8 rounded-xl">
-                    <span class="text-sky-500 font-mono text-sm">2025 - Günümüz</span>
-                    <h3 class="text-xl font-bold mt-2 text-white italic">Associate Founder @ AltHack</h3>
-                    <p class="text-slate-500 mt-4 text-sm">Deneyim açıklaması buraya gelecek...</p>
-                </div>
-                <div class="card-bg p-8 rounded-xl border-dashed border-slate-700 bg-transparent">
-                    <h3 class="text-xl font-bold mt-2 text-slate-600">Yeni Deneyim Ekle</h3>
-                </div>
-                <div class="card-bg p-8 rounded-xl border-dashed border-slate-700 bg-transparent">
-                    <h3 class="text-xl font-bold mt-2 text-slate-600">Yeni Deneyim Ekle</h3>
-                </div>
-                <div class="card-bg p-8 rounded-xl border-dashed border-slate-700 bg-transparent">
-                    <h3 class="text-xl font-bold mt-2 text-slate-600">Yeni Deneyim Ekle</h3>
-                </div>
-                <div class="card-bg p-8 rounded-xl border-dashed border-slate-700 bg-transparent">
-                    <h3 class="text-xl font-bold mt-2 text-slate-600">Yeni Deneyim Ekle</h3>
-                </div>
+                <div class="card-bg p-8 rounded-xl"><h3 class="text-xl font-bold text-white italic">Slot 1</h3><p class="text-slate-500 text-sm mt-4">...</p></div>
+                <div class="card-bg p-8 rounded-xl"><h3 class="text-xl font-bold text-white italic">Slot 2</h3><p class="text-slate-500 text-sm mt-4">...</p></div>
+                <div class="card-bg p-8 rounded-xl"><h3 class="text-xl font-bold text-white italic">Slot 3</h3><p class="text-slate-500 text-sm mt-4">...</p></div>
+                <div class="card-bg p-8 rounded-xl"><h3 class="text-xl font-bold text-white italic">Slot 4</h3><p class="text-slate-500 text-sm mt-4">...</p></div>
+                <div class="card-bg p-8 rounded-xl"><h3 class="text-xl font-bold text-white italic">Slot 5</h3><p class="text-slate-500 text-sm mt-4">...</p></div>
+                <div class="card-bg p-8 rounded-xl"><h3 class="text-xl font-bold text-white italic">Slot 6</h3><p class="text-slate-500 text-sm mt-4">...</p></div>
             </div>
         </div>
     </section>
 
     <section id="projeler" class="py-32 px-6 max-w-7xl mx-auto">
         <h2 class="section-title text-white">Öne Çıkan Projeler</h2>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-            <div class="card-bg p-6 rounded-lg flex flex-col justify-between h-64">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-20">
+            <div class="card-bg p-6 rounded-lg h-48 border-dashed border-slate-800 flex items-center justify-center text-slate-700 italic">Proje Slotu</div>
+            </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="cta-box p-10 rounded-3xl flex flex-col md:flex-row items-center gap-8 group">
+                <div class="text-5xl text-white group-hover:scale-110 transition"><i class="fa-brands fa-medium"></i></div>
                 <div>
-                    <i class="fa-solid fa-folder-open text-sky-500 mb-4"></i>
-                    <h3 class="font-bold text-white uppercase text-sm tracking-tighter">Proje Başlığı 1</h3>
-                    <p class="text-xs text-slate-500 mt-2">Kısa proje açıklaması lorem ipsum dolor...</p>
+                    <h3 class="text-2xl font-bold text-white mb-2">Siber Güvenlik Yazıları</h3>
+                    <p class="text-slate-400 text-sm mb-4">Teknik analizlerimi, CTF çözümlerimi ve sektördeki güncel zafiyetleri Medium üzerinden detaylandırıyorum.</p>
+                    <a href="https://medium.com/@fuysaal" target="_blank" class="text-sky-400 font-bold hover:underline">Yazıları Görüntüle →</a>
                 </div>
-                <a href="#" class="text-[10px] uppercase font-bold text-sky-400 hover:text-white">İncele →</a>
             </div>
-            <div class="card-bg p-6 rounded-lg h-64 border-dashed border-slate-800 flex items-center justify-center italic text-slate-700">Proje 2</div>
-            <div class="card-bg p-6 rounded-lg h-64 border-dashed border-slate-800 flex items-center justify-center italic text-slate-700">Proje 3</div>
-            <div class="card-bg p-6 rounded-lg h-64 border-dashed border-slate-800 flex items-center justify-center italic text-slate-700">Proje 4</div>
-            <div class="card-bg p-6 rounded-lg h-64 border-dashed border-slate-800 flex items-center justify-center italic text-slate-700">Proje 5</div>
-            <div class="card-bg p-6 rounded-lg h-64 border-dashed border-slate-800 flex items-center justify-center italic text-slate-700">Proje 6</div>
-            <div class="card-bg p-6 rounded-lg h-64 border-dashed border-slate-800 flex items-center justify-center italic text-slate-700">Proje 7</div>
-            <div class="card-bg p-6 rounded-lg h-64 border-dashed border-slate-800 flex items-center justify-center italic text-slate-700">Proje 8</div>
-            <div class="card-bg p-6 rounded-lg h-64 border-dashed border-slate-800 flex items-center justify-center italic text-slate-700">Proje 9</div>
-            <div class="card-bg p-6 rounded-lg h-64 border-dashed border-slate-800 flex items-center justify-center italic text-slate-700">Proje 10</div>
-        </div>
-    </section>
-
-    <section id="iletisim" class="py-32 px-6 border-t border-slate-900">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-5xl font-black mb-12 italic uppercase text-white tracking-tighter">İletişim</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <a href="mailto:uysal43fatih@gmail.com" class="card-bg p-6 rounded-lg hover:bg-sky-500 hover:text-slate-900 transition">
-                    <i class="fa-solid fa-envelope text-xl mb-2"></i>
-                    <p class="text-xs font-bold uppercase">Email</p>
-                </a>
-                <a href="https://linkedin.com/in/fuysaal" target="_blank" class="card-bg p-6 rounded-lg hover:bg-sky-600 hover:text-white transition">
-                    <i class="fa-brands fa-linkedin text-xl mb-2"></i>
-                    <p class="text-xs font-bold uppercase">LinkedIn</p>
-                </a>
-                <a href="https://github.com/fuysaal" target="_blank" class="card-bg p-6 rounded-lg hover:bg-white hover:text-black transition">
-                    <i class="fa-brands fa-github text-xl mb-2"></i>
-                    <p class="text-xs font-bold uppercase">GitHub</p>
-                </a>
+            <div class="cta-box p-10 rounded-3xl flex flex-col md:flex-row items-center gap-8 group">
+                <div class="text-5xl text-white group-hover:scale-110 transition"><i class="fa-brands fa-github"></i></a></div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Geliştirilen Araçlar</h3>
+                    <p class="text-slate-400 text-sm mb-4">Otomatize keşif araçları, güvenlik scriptleri ve açık kaynak projelerimi GitHub üzerinde paylaşıyorum.</p>
+                    <a href="https://github.com/fuysaal" target="_blank" class="text-sky-400 font-bold hover:underline">Repoları İncele →</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-slate-700 text-[10px] uppercase tracking-[0.4em]">
-        FATIH UYSAL &copy; 2026 // OFFENSIVE & DEFENSIVE RESEARCHER
+    <footer class="py-20 border-t border-slate-900 bg-[#0b0f1a] text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-black mb-8 italic uppercase text-white tracking-tighter">İLETİŞİM</h2>
+            <div class="flex justify-center space-x-12 mb-12">
+                <a href="mailto:uysal43fatih@gmail.com" class="text-slate-400 hover:text-sky-500 text-2xl transition"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/fuysaal" target="_blank" class="text-slate-400 hover:text-sky-600 text-2xl transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/fuysaal" target="_blank" class="text-slate-400 hover:text-white text-2xl transition"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <p class="text-slate-700 text-[10px] uppercase tracking-[0.5em] mono">FATIH UYSAL // 2026 // [SYSTEM SECURED]</p>
+        </div>
     </footer>
 
 </body>

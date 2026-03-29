@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+User-agent: BadBot
+Disallow: /
+
+Sitemap: https://fuysaal.github.io/sitemap.xml

@@ -48,7 +48,6 @@
         .section-title { font-size: 2.25rem; font-weight: 800; margin-bottom: 2rem; border-left: 4px solid #38bdf8; padding-left: 1rem; color: white; }
         .skill-item { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-family: 'Fira Code', monospace; font-size: 0.85rem; }
         
-        /* Navbar Animasyonları */
         @keyframes dropIn {
             0% { transform: translateY(-100%); opacity: 0; }
             100% { transform: translateY(0); opacity: 1; }
@@ -64,7 +63,6 @@
         .nav-link a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px; background-color: #38bdf8; transition: width 0.3s ease; }
         .nav-link a:hover::after { width: 100%; }
 
-        /* Neon Flow Animasyonu (Projeler, Deneyim, Yayınlar) */
         @keyframes borderRotate {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
@@ -101,7 +99,6 @@
         .neon-card:hover::before { opacity: 1; }
         .neon-card:hover { transform: translateY(-5px); }
 
-        /* 3D İletişim Kartları */
         .contact-container { perspective: 1000px; }
         .contact-card { transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1); transform-style: preserve-3d; position: relative; background: #111827; border: 1px solid #1f2937; }
         .contact-card:hover { transform: rotateX(10deg) rotateY(-10deg) translateY(-10px); border-color: #38bdf8; box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.5), 0 0 20px rgba(56, 189, 248, 0.2); }

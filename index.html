@@ -209,12 +209,12 @@
         .contact-card:hover i, .contact-card:hover p { transform: translateZ(50px); }
         .contact-card i, .contact-card p { transition: transform 0.5s ease; }
 
-        /* ── LANGUAGE TOGGLE – düzeltildi ── */
+        /* ── LANGUAGE TOGGLE  ── */
         .lang-btn {
             px: 3;
             padding: 4px 14px;
             border: 1px solid #38bdf8;
-            color: #94a3b8;          /* pasif: gri */
+            color: #94a3b8;          
             font-size: 11px;
             font-weight: 700;
             border-radius: 6px;
@@ -226,10 +226,9 @@
             color: #fff;
             background: rgba(56,189,248,0.15);
         }
-        /* Aktif dil: koyu arka plan + beyaz yazı = net görünür */
         .lang-btn-active {
             background: #38bdf8 !important;
-            color: #0b0f1a !important;      /* koyu yazı */
+            color: #0b0f1a !important;     
             border-color: #38bdf8 !important;
             font-weight: 900 !important;
             box-shadow: 0 0 10px rgba(56,189,248,0.5);
@@ -637,7 +636,6 @@
             });
             document.documentElement.lang = lang;
 
-            // Buton stillerini güncelle
             document.querySelectorAll('.lang-btn').forEach(btn => {
                 btn.classList.remove('lang-btn-active');
             });
@@ -646,7 +644,6 @@
             localStorage.setItem('lang', lang);
         }
 
-        // Sayfa yüklenince kayıtlı dili uygula
         (function () {
             const saved = localStorage.getItem('lang');
             if (saved && saved !== 'tr') {
